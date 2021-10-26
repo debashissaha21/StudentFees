@@ -1,0 +1,3 @@
+rootProject.name = "Student Fees"
+include ':app'
+include ':aFileChooser'

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Activities.StudentEdit">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Student"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/Text"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_margin="15dp"/>
+
+                <EditText
+                    android:id="@+id/editname"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Full Name"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_email_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Email Address"
+                    android:paddingLeft="26dp"
+                    android:inputType="textEmailAddress"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_location_on_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Address"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_ph_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="number"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_phone_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Phone Number"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_joining_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="date"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Enter Joining Date YYYY/MM/DD"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_leaving_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="date"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Enter Leaving Date YYYY/MM/DD"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edit_academic_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_school_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Academic Year"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_fees_per_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_money_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Fees Per Month"
+                    android:inputType="number"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/edit_add_paid_fees"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_money_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Paid fees"
+                    android:paddingLeft="26dp"
+                    android:inputType="number"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/edit_Stremark"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Remark"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Image"
+                    android:layout_margin="16dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/segoe_ui"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Student Aadhar Details"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:textColor="@color/Text"
+                        android:layout_margin="15dp"
+                        android:textAllCaps="true"/>
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/edit_aadhar_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/id_icon"
+                    android:drawableTint="@color/Text"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Aadhar Number"
+                    android:inputType="number"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Aadhar Image"
+                    android:layout_margin="16dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/segoe_ui"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Student Parent Details"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/Text"
+                    android:layout_margin="15dp"
+                    android:textAllCaps="true"/>
+                <EditText
+                    android:id="@+id/edit_st_parent_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Parent Name"
+                    android:inputType="text"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/edit_st_parent_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/ic_baseline_phone_24"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Parent Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:id="@+id/edit_st_parent_aadhar_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableEnd="@drawable/id_icon"
+                    android:drawableTint="@color/Text"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Parent Aadhar Number"
+                    android:inputType="number"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note: Please Upload The Images In Line 1) Student Image 2) Student Aadhar Image 3) Parent Aadhar Image (Required)"
+                    android:fontFamily="@font/segoe_ui"
+                    android:layout_margin="16dp"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:id="@+id/parent_aadhar_img"
+                        android:src="@drawable/user"/>
+
+                    <Button
+                        android:id="@+id/uploadImages"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/update_student"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:text="Update Student"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                    <Button
+                        android:id="@+id/del_student"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="@font/segoe_ui_bold"
+                        android:text="Delete Student"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
